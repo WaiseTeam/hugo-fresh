@@ -1,8 +1,9 @@
 {{- $section4 := .Site.Params.section4 }}
+{{- $id    := index $section4 "id" }}
 {{- $title    := index $section4 "title" }}
 {{- $subtitle := index $section4 "subtitle" }}
 {{- $clients  := index $section4 "clients" }}
-<section class="section is-medium section-secondary">
+<section class="section is-medium section-secondary" id={{ $id }}>
   <div class="container">
 
     <div class="title-wrapper has-text-centered">
