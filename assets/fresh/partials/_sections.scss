@@ -5,13 +5,13 @@ Section Styles
 //Sections
 .section {
     &.section-light-grey {
-        background-color: $waiseblue;
+        background-color: $blue-navy;
     }
     &.section-feature-grey {
-        background-color: $waiseblue;
+        background-color: $blue-navy;
     }
     &.section-secondary {
-        background-color: $waiseblue;
+        background-color: $blue-navy;
     }
     &.section-half {
         height: 75vh !important;
@@ -72,12 +72,12 @@ img.pushed-image {
             display: block;
         }
         .icon-box-title {
-            color: $waiseblue;
+            color: $blue-navy;
             font-size: 1.2rem;
             font-weight: 600;
         }
         .icon-box-text {
-            color: $waiseblue;
+            color: $blue-navy;
             font-size: 1rem;
             font-weight: 400;
         }
