@@ -1,8 +1,8 @@
-{{- $section4 := .Site.Params.section4 }}
-{{- $id    := index $section4 "id" }}
-{{- $title    := index $section4 "title" }}
-{{- $subtitle := index $section4 "subtitle" }}
-{{- $clients  := index $section4 "clients" }}
+{{- $achievements := .Site.Params.achievements }}
+{{- $id    := index $achievements "id" }}
+{{- $title    := index $achievements "title" }}
+{{- $subtitle := index $achievements "subtitle" }}
+{{- $events  := index $achievements "events" }}
 <section class="section is-medium section-secondary" id={{ $id }}>
   <div class="container">
 
@@ -15,16 +15,17 @@
 
     <div class="content-wrapper">
       <div class="columns is-vcentered">
-        {{- range $clients }}
-        <div class="column is-4">
+        {{- range $events }}
+        <div class="column is-6">
           <figure class="testimonial">
+
             <blockquote>
-              {{ .quote }}
+              <h5>{{ .title }}</h5>
+
+              {{ .description }}
             </blockquote>
             <div class="author">
-              <img src="{{ printf "/images/illustrations/faces/%s.png" (string .img) | relURL }}" alt=""/>
-              <h5>{{ .name }}</h5>
-              <span>{{ .job }}</span>
+              <img src="{{ printf "/images/illustrations/events/%s.png" (string .img) | relURL }}" alt=""/>
             </div>
           </figure>
         </div>

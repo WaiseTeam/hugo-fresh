@@ -2,7 +2,6 @@
     {{ if .Site.Params.hero }}
     {{ partial "hero.html" . }}
     {{ end }}
-
     {{ if .Site.Params.section1 }}
     {{ partial "section1.html" . }}
     {{ end }}
@@ -12,11 +11,11 @@
     {{ end }}
    
     {{ if .Site.Params.section3 }}
-    {{ partial "section3.html" . }}
+    {{ partial "achievements.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.section4 }}
-    {{ partial "section4.html" . }}
+    {{ if .Site.Params.team }}
+    {{ partial "team.html" . }}
     {{ end }}
 
     {{ if .Site.Params.section5 }}

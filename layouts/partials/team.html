@@ -1,0 +1,40 @@
+{{- $team := .Site.Params.team }}
+{{- $id    := index $team "id" }}
+{{- $title    := index $team "title" }}
+{{- $members  := index $team "members" }}
+<section class="section is-medium section-secondary" id={{ $id }}>
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">{{ $title }}</h2>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns is-vcentered">
+        {{- range $members }}
+        <div class="column is-4">
+          <figure class="testimonial">
+            <div class="member">
+              <div>
+                <h5>{{ .name }}</h5>
+              </div>
+              <div>
+                <img src="{{ printf "/images/illustrations/team/%s.png" (string .img) | relURL }}" class = "member-photo" alt=""/>
+              </div>
+              <div>
+                <h5>{{ .field }}</h5>
+                
+              </div>
+              <div>
+                <h5>{{ .job }}</h5>
+                
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
