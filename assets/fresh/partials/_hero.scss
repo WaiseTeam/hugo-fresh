@@ -13,6 +13,7 @@ Hero styles
     .title {
         &.is-bold {
             font-weight: 700;
+            color: $white;
         }
     }
     .subtitle {
@@ -22,8 +23,49 @@ Hero styles
     }
 }
 
-.hero-foot {
-    img.partner-logo {
-        height: 70px;
-    }
+
+.arrow {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 13px;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
+
+.hero-arrow {
+    margin-top: 10em
+}
+
+.hero-arrow a :visited{
+    text-decoration:none; 
+     color: $blue-navy;
+     cursor:pointer;  
+}
+.hero-arrow a :active {
+    text-decoration:none; 
+    color: $blue-navy;
+    cursor:pointer;  
+}
+
+.hero-arrow a :focus  {
+    text-decoration:none; 
+    color: $blue-navy;
+    cursor:pointer;  
+}
+
+.hero-arrow :hover{
+     text-decoration:none; 
+     color: $blue-navy;
+     cursor:pointer;  
+}
+
+.hero-arrow :active{
+    text-decoration:none; 
+    color: $blue-navy;
+    cursor:pointer;  
+}
+
